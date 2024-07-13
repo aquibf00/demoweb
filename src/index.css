@@ -1,0 +1,324 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(-80deg, #442d14, #e4cb8d);
+}
+
+.newMainBg {
+  background: linear-gradient(-80deg, #442d14, #e4cb8d);
+}
+
+.mainColor {
+  background-color: #472c0e;
+}
+
+.headerBg {
+  background: linear-gradient(90deg, rgb(71, 44, 14) 46%, rgb(85, 51, 17) 86%);
+  background-repeat: repeat;
+}
+
+.allBg {
+  background-image: url('./assets/shits-1.png');
+  background-size: cover;
+}
+
+.fahkwang-extralight {
+  font-family: "Fahkwang", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.fahkwang-light {
+  font-family: "Fahkwang", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.fahkwang-regular {
+  font-family: "Fahkwang", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fahkwang-medium {
+  font-family: "Fahkwang", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.fahkwang-semibold {
+  font-family: "Fahkwang", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.fahkwang-bold {
+  font-family: "Fahkwang", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.fahkwang-extralight-italic {
+  font-family: "Fahkwang", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.fahkwang-light-italic {
+  font-family: "Fahkwang", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.fahkwang-regular-italic {
+  font-family: "Fahkwang", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.fahkwang-medium-italic {
+  font-family: "Fahkwang", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.fahkwang-semibold-italic {
+  font-family: "Fahkwang", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.fahkwang-bold-italic {
+  font-family: "Fahkwang", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.mt--150 {
+  margin-top: -150px;
+}
+
+.roundedButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partnersText {
+  background: linear-gradient(0deg, #000000b3, #0000004d 70%, #0000);
+  bottom: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 13px;
+  left: 0;
+  margin-bottom: 0;
+  max-height: 60%;
+  overflow: auto;
+  padding: 0 8px 8px;
+  position: absolute;
+  scrollbar-color: #0000 #0000;
+  scrollbar-gutter: stable both-edges;
+  scrollbar-width: thin;
+  text-align: center;
+  width: 100%;
+  will-change: transform;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  unicode-bidi: isolate;
+  color: #fff;
+}
+
+.li::marker {
+  unicode-bidi: isolate;
+  font-variant-numeric: tabular-nums;
+  text-transform: none;
+  text-indent: 0px !important;
+  text-align: start !important;
+  text-align-last: start !important;
+}
+
+.akaya-telivigala-regular {
+  font-family: "Akaya Telivigala", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text-outline {
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.text-outline-2 {
+  text-shadow:
+    -1px -1px 0 rgba(0, 0, 0, 0.7),
+    1px -1px 0 rgba(0, 0, 0, 0.7),
+    -1px 1px 0 rgba(0, 0, 0, 0.7),
+    1px 1px 0 rgba(0, 0, 0, 0.7),
+}
+
+.mtInput {
+  outline: none;
+  border-width: 4px;
+  border-color: #1f1f1f;
+  background-color: transparent;
+  height: 46px;
+  font-family: "Akaya Telivigala", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  caret-color: #000;
+  color: #000;
+  font-size: 18px;
+}
+
+.mtInput::focus {
+  border-color: #e4cb8d;
+}
+
+.mtInput::placeholder {
+  color: #613A1E;
+  font-family: "Akaya Telivigala", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mtInput2 {
+  caret-color: #FFF;
+  color: #FFF;
+}
+
+.mtInput2::placeholder {
+  color: #969696;
+  font-family: "Akaya Telivigala", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 6px;
+}
+
+.tailBg {
+  background-color: #422713;
+}
+.PartnersbBg {
+  background-color: #613A1E;
+  background: linear-gradient(to bottom, #613A1E 0%, #422713 100%);
+}
+
+.shitMapBg { 
+  background: linear-gradient(to bottom, rgba(35, 23, 14, 1) 0%, rgba(137, 91, 54, 0) 100%);
+}
+.shitMapBg2{
+  background: linear-gradient(to top, rgba(35, 23, 14, 1) 0%, rgba(137, 91, 54, 0) 100%);
+}
+
+.rocket {
+  animation: float 4s ease-in-out infinite;
+}
+.rocket2 {
+  animation: float2 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-60px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes float2 {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.rotate180 {
+  transform: rotate(180deg);
+}
+
+.rounded48{
+  border-radius: 48px;
+}
+.rounded24 {
+  border-radius: 24px;
+}
+
+.gradient {
+  background: linear-gradient(90deg, #FFA509 0%, #FF5309 100%);
+}
+.unresponsive-element {
+  pointer-events: none;
+}
+.justified-text {
+  text-align: justify;
+}
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.line-clamp-8 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 8;
+  overflow: hidden;
+}
