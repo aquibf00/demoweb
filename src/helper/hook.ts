@@ -59,6 +59,9 @@ export const useCountDown = () => {
     minute: 0,
     second: 0
   })
+
+  const isLaunched = useMemo(() => Object.values(time).some(value => value <= 0), [time])
+
   useEffect(() => {
     const timeRef = setInterval(() => {
       const now = new Date()
@@ -85,10 +88,19 @@ export const useCountDown = () => {
     const hoursStr = time.hour
     const minutesStr = time.minute
     const secondsStr = time.second
+    
+    if (isLaunched) {
+      return null
+    }
+
     if (time.day === 0) {
       return `${hoursStr} ${hoursLabel} ${minutesStr} ${minutesLabel} ${secondsStr} ${secondsLabel}`
     }
     return `${time.day} ${daylabel} ${hoursStr} ${hoursLabel} ${minutesStr} ${minutesLabel} ${secondsStr} ${secondsLabel}`
   }, [time])
-  return label
+
+  return {
+    isLaunched,
+    label
+  }
 }
