@@ -375,7 +375,7 @@ const getTokenBalance = async (connection: any, publicKey: any, tokenPublicKey: 
 export const IndexScreen = () => {
   const { user, changeUser } = useUser()
   const { setToast } = useToast()
-  const label = useCountDown()
+  const { isLaunched, label } = useCountDown()
   const [shwoSelectWallet, setShowSelectWallet] = useState(false)
   const [urlInvite, setUrlInvite] = useState(urlParams.get('invite') || '')
   const [toAddress, setToAddress] = useState('')
@@ -1091,7 +1091,7 @@ export const IndexScreen = () => {
         <div role="alert" className="alert alert-error ustify-center items-center gradient">
           <img src={alertAlarmClock} className="w-[30px] hidden md:block" />
           <div className='akaya-telivigala-regular'>
-            <div>SHIT Launching Soon!</div>
+            {isLaunched ? <div>SHIT has been launched!</div> : <div>SHIT Launching Soon!</div>}
             <div>{label}</div>
           </div>
         </div>
